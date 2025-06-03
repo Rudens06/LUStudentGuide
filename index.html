@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <script>
+        (function () {
+            const theme = localStorage.getItem("theme");
+            if (theme === "dark") {
+                document.documentElement.classList.add("dark-mode");
+            }
+        })();
+    </script>
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latvijas Universitāte</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="root.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/875fffc357.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <div class="nav-container">
+        <div class="logo">
+            <div class="logo-circle"></div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#" class="active">Sākums</a></li>
+                    <li><a href="iesakotStudijas.html">Iesākot studijas</a></li>
+                    <li><a href="macibuProcess.html">Mācību process</a></li>
+                    <li><a href="digitalieRiki.html">Digitālie rīki</a></li>
+                    <li><a href="projekti.html">Projekti</a></li>
+                    <li><a href="parMani.html">Par Mani</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="controls-container">
+            <button id="theme-toggle" class="theme-toggle">
+                <img id="theme-icon" src="https://img.icons8.com/ios-filled/50/moon-symbol.png" alt="Krāsu shēmas pārslēga ikona">
+            </button>
+
+            <div class="hamburger" id="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-image">
+        <img src="https://consolis.com/wp-content/uploads/2021/07/001-ul-house-of-nature-consolis-latvia-e1548976058599.jpg" alt="Bilde ar Latvijas Universitātes ēku">
+    </div>
+    <div class="hero-content">
+        <h1>MANA PIEREDZE</h1>
+        <h2>LATVIJAS UNIVERSITĀTĒ</h2>
+    </div>
+</section>
+
+<section class="project-section">
+    <h2 class="section-title">PAR PROJEKTU</h2>
+    <p class="project-description">
+        Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu, eam te laudem imperdiet, pro no facilis impedit. Nonumy minimum has ne nulla argumentum ne, ne falli talem referrentur vis. Vel minim mediocritatem eu, no illum doming duis vel, vel et aliquo iriure facilis.
+    </p>
+
+    <div class="project-cards">
+        <div class="project-card">
+            <div class="card-image">
+                <img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" alt="Grāmatu ikona, kas simbolizē studiju sākumu">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">IESĀKOT STUDIJAS</h3>
+                <a href="iesakotStudijas.html" class="card-button">UZZINĀT VAIRĀK</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="card-image">
+                <img src="https://cdn-icons-png.flaticon.com/512/2490/2490396.png" alt="Smadzeņu un grāmatas ikona, kas simbolizē mācību procesu">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">MĀCĪBU PROCESS</h3>
+                <a href="macibuProcess.html" class="card-button">UZZINĀT VAIRĀK</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="card-image">
+                <img src="https://cdn-icons-png.flaticon.com/128/1236/1236487.png" alt="Datora monitora ikona ar digitāliem rīkiem">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">DIGITĀLIE RĪKI</h3>
+                <a href="digitalieRiki.html" class="card-button">UZZINĀT VAIRĀK</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="card-image">
+                <img src="https://cdn-icons-png.flaticon.com/128/1087/1087815.png" alt="Spuldzes un zobratu ikona, kas simbolizē projektu idejas">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">PROJEKTI</h3>
+                <a href="projekti.html" class="card-button">UZZINĀT VAIRĀK</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <h3>Reinis Rudens</h3>
+            <div class="social-links">
+                <a href="https://www.instagram.com/_rudens_/" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/reinis.rudens/" class="social-link">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/reinis-rudens-58040b266/" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <h3>Saites</h3>
+            <ul class="links-list">
+                <li><a href="#">Sākums</a></li>
+                <li><a href="iesakotStudijas.html">Iesākot studijas</a></li>
+                <li><a href="macibuProcess.html">Mācību process</a></li>
+                <li><a href="digitalieRiki.html">Digitālie rīki</a></li>
+                <li><a href="projekti.html">Projekti</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

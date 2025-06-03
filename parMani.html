@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <script>
+        (function () {
+            const theme = localStorage.getItem("theme");
+            if (theme === "dark") {
+                document.documentElement.classList.add("dark-mode");
+            }
+        })();
+    </script>
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par mani | Latvijas Universitāte</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="root.css" rel="stylesheet"/>
+    <link href="section.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/875fffc357.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <div class="nav-container">
+        <div class="logo">
+            <div class="logo-circle"></div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Sākums</a></li>
+                    <li><a href="iesakotStudijas.html">Iesākot studijas</a></li>
+                    <li><a href="macibuProcess.html">Mācību process</a></li>
+                    <li><a href="digitalieRiki.html">Digitālie rīki</a></li>
+                    <li><a href="projekti.html">Projekti</a></li>
+                    <li><a href="parMani.html" class="active">Par Mani</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="controls-container">
+            <button id="theme-toggle" class="theme-toggle">
+                <img id="theme-icon" src="https://img.icons8.com/ios-filled/50/moon-symbol.png" alt="Theme toggle">
+            </button>
+
+            <div class="hamburger" id="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="subpage-header">
+    <h1>PAR MANI</h1>
+    <div class="header-image">
+        <img src="https://cdn.pixabay.com/photo/2017/07/31/11/31/laptop-2557468_1280.jpg" alt="Studijas">
+    </div>
+</div>
+
+<section class="content-section">
+    <h2 class="section-heading">Ievads</h2>
+    <div class="intro-text">
+        <p>Esmu Latvijas Universitātes Eksakto Zinātņu un Tehnoloģiju fakultātes students. Mācos datorzinātnes 3. kursā.</p>
+    </div>
+
+    <div class="content-row">
+        <div class="row-text">
+            <h3>Github repozitorijs</h3>
+            <p>Izmantoju Github, lai glabātu gan studiju procesā, gan brīvajā laikā izveidotos projektus.</p>
+            <a href="https://github.com/Rudens06">Github</a>
+        </div>
+        <div class="row-image">
+            <img src="https://cdn.pixabay.com/photo/2018/01/17/07/06/laptop-3087585_1280.jpg" alt="Studijas attēls 1">
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <h3>Reinis Rudens</h3>
+            <div class="social-links">
+                <a href="https://www.instagram.com/_rudens_/" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/reinis.rudens/" class="social-link">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/reinis-rudens-58040b266/" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <h3>Saites</h3>
+            <ul class="links-list">
+                <li><a href="#">Sākums</a></li>
+                <li><a href="iesakotStudijas.html">Iesākot studijas</a></li>
+                <li><a href="macibuProcess.html">Mācību process</a></li>
+                <li><a href="digitalieRiki.html">Digitālie rīki</a></li>
+                <li><a href="projekti.html">Projekti</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
