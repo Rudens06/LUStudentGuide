@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const navLinks = document.querySelectorAll('nav ul li a');
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
-            if (window.innerWidth <= 768) {
+            if (window.innerWidth <= 800) {
                 mainNav.classList.remove('open');
                 hamburger.classList.remove('open');
             }
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.addEventListener('click', (e) => {
-        if (window.innerWidth <= 768 &&
+        if (window.innerWidth <= 800 &&
             !mainNav.contains(e.target) &&
             !hamburger.contains(e.target) &&
             mainNav.classList.contains('open')) {
