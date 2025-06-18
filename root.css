@@ -230,11 +230,11 @@ nav ul li a.active::after {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    filter: brightness(85%);
+    filter: brightness(60%);
 }
 
 .dark-mode .hero-image img {
-    filter: brightness(90%);
+    filter: brightness(70%);
 }
 
 .hero-content {
