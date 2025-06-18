@@ -234,7 +234,7 @@ nav ul li a.active::after {
 }
 
 .dark-mode .hero-image img {
-    filter: brightness(70%);
+    filter: brightness(60%);
 }
 
 .hero-content {
